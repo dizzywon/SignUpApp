@@ -17,39 +17,31 @@
 
     <body>
         <div class="wrapper">
-            <header class="head">
-                <div>
-                    <ul class="text-center">
-                        <li><i class="fa fa-camera"></i></li>
-                        <li><h3>PHOTOAPP</h3></li>
-                    </ul>
+            <div class="login">
+                <ul class=" title">
+                    <li><i class="fa fa-camera"></i></li>
+                    <li><h3>PHOTOAPP</h3></li>
+                </ul>
+                <div class="login-body">
+                    <h3>LOGIN</h3>
+                    <form class="form-control">
+                        <i class="fa fa-user"></i>
+                        <input type="email" placeholder="Enter Email..." autofocus/>
+                    </form>
+                    <form class="form-control">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="PASSWORD"/>
+                    </form>
+                    <label class="radio-container">REMEMBER ME
+                        <input type="radio">
+                        <span class="circle"></span>
+                    </label>
                 </div>
-            </header>
-            <main class="login-form">
-                <div class="container">
-                    <div class="row">
-                        <h3>LOGIN</h3>
-                        <form class="form-control">
-                            <i class="fa fa-user"></i><input type="email" placeholder="Enter Email...">
-                        </form>
-                        <form class="form-control">
-                            <i class="fa fa-key"></i><input type="password" placeholder="PASSWORD">
-                        </form>
-                        <input type="radio" value="remember me">
-                        <label>REMEMBER ME</label>
-                        <div class="check"></div>
-                    </div>
-                </div>
-
                 <div class="button">
-                    <div class="button-group">
-                        <button type="submit" class="btn btn-1">LOGIN WITH FACEBOOK</button>
-                    </div>
-                    <div class="button-group">
-                        <button type="submit" class="btn btn-2">LOGIN </button>
-                    </div>
+                    <button type="submit" class="btn btn-1"><p>LOGIN WITH FACEBOOK</p></button>
+                    <button type="submit" class="btn btn-2"><p>LOGIN</p> </button>
                 </div>
-            </main>
+            </div>
         </div>
     </body>
 </html>
