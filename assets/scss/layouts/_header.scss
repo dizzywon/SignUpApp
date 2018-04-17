@@ -1,0 +1,18 @@
+.head{
+    padding: 35px;
+    ul{
+        li{
+            display: inline-block;
+            font-size: 18px;
+            .fa-camera{
+                font-size: 40px;
+                color: $brand-blue;
+                width: 20px;
+            }
+            h3{
+                color: $brand-blue-d;
+                margin-left: 40px;
+            }
+        }
+    }
+}

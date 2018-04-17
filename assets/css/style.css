@@ -1,0 +1,152 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html,
+body,
+#intro {
+  height: 100%; }
+
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility; }
+
+body {
+  background: #E1E1E1;
+  color: #1c5078; }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0; }
+
+ul, li {
+  list-style-type: none; }
+
+.wrapper {
+  position: relative;
+  top: 10%;
+  width: 45%;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 60px 60px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+.text-center {
+  text-align: center; }
+
+.head {
+  padding: 35px; }
+  .head ul li {
+    display: inline-block;
+    font-size: 18px; }
+    .head ul li .fa-camera {
+      font-size: 40px;
+      color: #008DD2;
+      width: 20px; }
+    .head ul li h3 {
+      color: #1c5078;
+      margin-left: 40px; }
+
+.login-form .row .form-control {
+  margin-top: 30px; }
+
+.login-form .row .form-control input[type="email"],
+.login-form .row .form-control input[type="password"] {
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  border: none;
+  background: #E1E1E1; }
+
+.login-form .row input[type="radio"] {
+  position: absolute;
+  visibility: hidden; }
+
+.login-form .row label {
+  position: absolute;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 15px; }
+
+.login-form .row .check {
+  position: absolute;
+  border: 2px solid #AAAAAA;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  margin-top: 15px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear; }
+
+.login-form .row .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear; }
+
+.login-form .row input[type=radio]:checked ~ .check {
+  border: 2px solid #AAAAAA; }
+
+.login-form .row input[type=radio]:checked ~ .check::before {
+  background: #008DD2; }
+
+.button {
+  content: "";
+  display: table;
+  clear: both; }
+  .button .button-group {
+    float: left; }
+    .button .button-group .btn {
+      margin-top: 70px;
+      height: 70px;
+      border: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #FFFFFF;
+      width: 306.6px; }
+    .button .button-group .btn-1 {
+      background: #1c5078; }
+    .button .button-group .btn-2 {
+      background: #008DD2; }
+
+@media (max-width: 780px) and (min-width: 320px) {
+  .wrapper {
+    position: relative;
+    top: 15%;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 60px 60px -10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; } }
