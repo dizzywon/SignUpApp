@@ -24,7 +24,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-rendering: optimizeLegibility; }
 
 body {
@@ -55,6 +55,21 @@ ul, li {
 .text-center {
   text-align: center; }
 
+.btn {
+  width: 50%;
+  height: 100%;
+  padding: 10px 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  position: absolute;
+  max-height: 60px;
+  border: 0px solid rgba(0, 0, 0, 0.1); }
+
 .login {
   border-radius: 2px 2px 5px 5px;
   padding: 10px 20px 20px 20px;
@@ -69,7 +84,7 @@ ul, li {
   .login .title {
     text-align: center;
     margin: 0;
-    padding: 0; }
+    padding: 10px 0; }
     .login .title li {
       display: inline-block;
       font-size: 18px;
@@ -81,67 +96,63 @@ ul, li {
       .login .title li h3 {
         color: #1c5078;
         margin-left: 40px; }
-  .login .login-body {
-    margin-top: 50px; }
-    .login .login-body .form-control .fa-user,
-    .login .login-body .form-control .fa-lock {
-      font-size: 20px; }
-    .login .login-body .form-control input {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 15px 10px;
-      margin-bottom: 10px;
-      width: 90%;
-      border: none;
-      background: #ddd;
-      border-bottom: 2px solid #008DD2;
-      transition: border-width 0.2s ease;
-      border-radius: 2px;
-      color: #008DD2; }
-    .login .login-body .form-control input[type="password"] {
-      border: none; }
-    .login .login-body .radio-container {
-      margin-top: 20px;
-      display: inline-block;
-      position: relative;
-      cursor: pointer;
-      user-select: none;
-      padding-left: 30px;
-      font-size: 15px; }
-      .login .login-body .radio-container input[type="radio"] {
-        display: none; }
-      .login .login-body .radio-container .circle {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        background-color: #E1E1E1;
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-radius: 50%; }
-    .login .login-body .radio-container input:checked + .circle {
-      background-color: #E1E1E1; }
-    .login .login-body .radio-container input:checked + .circle:after {
-      content: "";
-      height: 12px;
-      width: 12px;
-      background-color: #008DD2;
-      position: absolute;
-      border-radius: 50%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-  .login .btn {
-    width: 50%;
-    height: 100%;
-    padding: 10px 10px;
-    color: #fff;
-    display: block;
-    border: none;
+  .login .login-body h3 {
+    margin-top: 15px;
+    padding: 20px 0;
+    font-size: 20px; }
+  .login .login-body .form-control .fa-user,
+  .login .login-body .form-control .fa-lock {
+    font-size: 20px; }
+  .login .login-body .form-control input {
     margin-top: 20px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    border: none;
+    background: #dddddd45;
+    transition: border-width 0.2s ease;
+    color: #000000;
+    outline: none; }
+  .login .login-body .form-control input:focus {
+    border-bottom: 2px solid #008DD2; }
+  .login .login-body .form-control :-ms-input-placeholder,
+  .login .login-body .form-control ::-webkit-input-placeholder,
+  .login .login-body .form-control :-moz-placeholder {
+    font-family: 'Nunito', sans-serif; }
+  .login .login-body .radio-container {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 30px;
+    font-size: 15px; }
+    .login .login-body .radio-container input[type="radio"] {
+      display: none; }
+    .login .login-body .radio-container .circle {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background-color: #E1E1E1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      border: 1px solid #4d4d4d; }
+  .login .login-body .radio-container input:checked + .circle {
+    background-color: #E1E1E1;
+    border: 1px solid #4d4d4d; }
+  .login .login-body .radio-container input:checked + .circle:after {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background-color: #008DD2;
     position: absolute;
-    max-height: 60px;
-    border: 0px solid rgba(0, 0, 0, 0.1); }
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
   .login .btn-1 {
     background: #1c5078;
     left: 0;
