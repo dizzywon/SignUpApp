@@ -8,7 +8,7 @@
     background: $brand-white;
     position: relative;
     padding-bottom: 80px;
-    box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
     .title{
         text-align: center;
         margin: 0;
@@ -35,24 +35,30 @@
             font-size: 20px;
         }
         .form-control{
+                padding: 10px 0px;
+                margin-bottom: 30px;
+                width: 100%;
+                background: #dddddd45;
+                color: $brand-dark;
+                border-bottom: 2px solid $brand-blue;
+                
             .fa-user,
             .fa-lock{
+                margin-left: 10px;
+                text-align: center;
+                width: 26px;
+                float: left;
                 font-size: 20px;
+                color: $brand-grey;
             }
             input{
-                margin-top: 20px;
-                display: inline-block;
-                padding: 15px 10px;
-                margin-bottom: 10px;
-                width: 90%;
                 border: none;
-                background: #dddddd45;
-                transition: border-width 0.2s ease;
-                color: $brand-dark;
                 outline: none;
-            }
-            input:focus{
-                border-bottom: 2px solid $brand-blue;
+                background: none;
+                width: 80%;
+                color: $brand-dark;
+                margin: 0 10px;
+                transition: border-width 0.2s ease;
             }
             :-ms-input-placeholder,
             ::-webkit-input-placeholder,
@@ -61,7 +67,7 @@
             }
         }
         .radio-container{
-            margin-top: 20px;
+            margin-top: 10px;
             display: inline-block;
             position: relative;
             cursor: pointer;
