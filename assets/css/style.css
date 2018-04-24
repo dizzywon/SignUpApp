@@ -115,18 +115,21 @@ ul, li {
       float: left;
       font-size: 20px;
       color: #4d4d4d; }
-    .login .login-body .form-control input {
+    .login .login-body .form-control label {
+      position: absolute;
+      left: 20%; }
+    .login .login-body .form-control input[type="text"],
+    .login .login-body .form-control input[type="password"] {
       border: none;
       outline: none;
       background: none;
       width: 80%;
       color: #000000;
       margin: 0 10px;
-      transition: border-width 0.2s ease; }
-    .login .login-body .form-control :-ms-input-placeholder,
-    .login .login-body .form-control ::-webkit-input-placeholder,
-    .login .login-body .form-control :-moz-placeholder {
       font-family: 'Nunito', sans-serif; }
+      .login .login-body .form-control input[type="text"]:valid + label,
+      .login .login-body .form-control input[type="password"]:valid + label {
+        opacity: 0; }
   .login .login-body .radio-container {
     margin-top: 10px;
     display: inline-block;

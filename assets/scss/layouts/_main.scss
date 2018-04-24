@@ -51,19 +51,24 @@
                 font-size: 20px;
                 color: $brand-grey;
             }
-            input{
+            label{
+                position: absolute;
+                left: 20%;;
+            }
+            input[type="text"],
+            input[type="password"]{
                 border: none;
                 outline: none;
                 background: none;
                 width: 80%;
                 color: $brand-dark;
                 margin: 0 10px;
-                transition: border-width 0.2s ease;
-            }
-            :-ms-input-placeholder,
-            ::-webkit-input-placeholder,
-            :-moz-placeholder{
-                font-family: 'Nunito', sans-serif;
+                font-family:'Nunito', sans-serif;
+                &:valid {
+                    & + label {
+                    opacity: 0;
+                    }
+                }
             }
         }
         .radio-container{
